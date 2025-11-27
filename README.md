@@ -69,13 +69,21 @@ pip install -e .
 export KEY_OPENAI="sk-..."     # For OpenAI models
 export KEY_DEEPSEEK="..."      # For DeepSeek models
 
-# Install Ollama (for open-source models - optional)
-curl -fsSL https://ollama.com/install.sh | sh
+# Install Ollama (for open-source models, triage bench)
+# Platform-specific installation:
+#   Mac: Download from https://ollama.com/download or: brew install ollama
+#   Linux: curl -fsSL https://ollama.com/install.sh | sh
+#   Windows: Download installer from https://ollama.com/download
+# After installation, verify: ollama --version
 
-# Pull open-source models (examples - optional)
+# Pull open-source models (examples)
 ollama pull llama3.1
 ollama pull qwen2.5
+ollama pull deepseek-r1
+ollama pull mistral
 ```
+<｜tool▁call▁begin｜>
+read_file
 
 ### Running Benchmarks
 

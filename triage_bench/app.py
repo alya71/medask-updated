@@ -314,7 +314,7 @@ def create_ui():
                 ### Ollama Setup (for open-source models)
                 
                 If using Ollama models:
-                1. Install Ollama: `curl -fsSL https://ollama.com/install.sh | sh`
+                1. Install Ollama using instructions in README.md file
                 2. Pull the model: `ollama pull llama3.1` (or your chosen model)
                 3. Ensure Ollama is running: `ollama serve` (usually runs automatically)
                 
